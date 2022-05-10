@@ -108,6 +108,10 @@ $('.removal').on('click', removingButton)
 $('.header').css('text-align' , 'center');
 $('.header').css('font-size' , '3rem');
 
+//Content Container
+$('.content-container').css('display' , 'inline-flex');
+$('.content-container').css('width' , '100%');
+$('.content-container').css('height' , '450px');
 
 
       //Movie List 
@@ -119,3 +123,59 @@ $('.active-list').css('justify-content' , 'flex-start');
 $('.active-list').css('align-items' , 'center');
 
 $('.addMovieSection').css('margin' , "10px 0px 0px 0px");
+
+$('#movie-box').css('margin' , '10px 0px 0px 0px');
+
+      //Movie Details 
+$('.movieInfo').css('width' , '60%');
+$('.movieInfo').css('height' , '450px');
+$('.movieInfo').css('display' , 'flex');
+
+$('.movieDetails').css('height' , '450px');
+$('.movieDetails').css('width' , '65%');
+$('.movieDetails').css('display' , 'flex');
+$('.movieDetails').css('flex-direction' , 'column');
+$('.movieDetails').css('flex-wrap' , 'nowrap');
+$('.movieDetails').css('align-content' , 'flex-start');
+$('.movieDetails').css('justify-content' , 'flex-start');
+$('.movieDetails').css('align-items' , 'flex-start');
+
+$('.moviePoster').css('height' , '450px');
+$('.moviePoster').css('width' , '35%');
+$('.moviePoster').css('display' , 'flex');
+$('.moviePoster').css('flex-direction' , 'column');
+$('.moviePoster').css('flex-wrap' , 'nowrap');
+$('.moviePoster').css('align-content' , 'center');
+$('.moviePoster').css('justify-content' , 'center');
+$('.moviePoster').css('align-items' , 'center');
+
+      //Removed Movies
+$('.removed-div').css('width' , "20%");
+$('.removed-div').css('height' , "450px");
+$('.removed-div').css('display' , "flex");
+$('.removed-div').css('flex-direction' , "column");
+$('.removed-div').css('flex-wrap' , "wrap");
+$('.removed-div').css('align-content' , "center");
+$('.removed-div').css('justify-content' , "flex-start");
+$('.removed-div').css('align-items' , "flex-start");
+
+$('.deleted-title').css('margin' , '15px 0px 10px 0px');
+
+
+      //Library Title 
+$('.libraryTitle').css('font-size' , '2rem');
+$('.libraryTitle').css('text-decoration' , 'underline');
+$('.libraryTitle').css('text-align' , 'center');
+$('.libraryTitle').css('justify-content' , 'flex-start');
+$('.libraryTitle').css('align-items' , 'flex-start');
+
+
+      // Movie Library 
+$('.movieLibrary').css('width' , '100%');
+$('.movieLibrary').css('height' , '400px');
+$('.movieLibrary').css('display' , 'flex');
+$('.movieLibrary').css('flex-direction' , 'row');
+$('.movieLibrary').css('flex-wrap' , 'wrap');
+$('.movieLibrary').css('justify-content' , 'center');
+
+
