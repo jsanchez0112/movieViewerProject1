@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Movie Helper</title>
   </head>
-  
+
   <div class="header">
     <h5>MovieAide</h5>
-    <button id="generateRandom">Get Random Movie</button>
     <!-- This is where the header goes. -->
   </div>
 
-<br>
-
-
+  <br />
+<hr>
   <div class="content-container">
     <div class="active-list">
       <div class="addMovieSection">
@@ -26,7 +24,6 @@
       </div>
       <ul class="movieList"></ul>
     </div>
-
 
     <!-- this is where the movie info will go plus the button to allow for the random generator -->
     <div class="movieInfo">
@@ -40,6 +37,7 @@
         <p>Runtime: <span class="runTime"></span></p>
 
         <div class="buttons">
+          <button id="generateRandom">Get Random Movie</button>
           <button class="addToLibrary">Add To Watched</button>
           <button class="removal">Remove from List</button>
         </div>
@@ -55,7 +53,7 @@
       <ul class="removedList"></ul>
     </div>
   </div>
-
+<hr>
   <h2 class="libraryTitle">Watched Movies</h2>
   <div class="movieLibrary">
     <!-- this is going to be a library of the movie icons that will allow them to be showing the movie poster. -->

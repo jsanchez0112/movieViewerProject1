@@ -100,6 +100,11 @@ $('.removedList').on('click' , 'li' , permRemoval);
       //Top 
 $('.header').css('text-align' , 'center');
 $('.header').css('font-size' , '3rem');
+$('.header').css('margin' , 'auto');
+$('.header').css('width' , '30%');
+$('.header').css('background-color' , '#F15656');
+
+
 
 //Content Container
 $('.content-container').css('display' , 'inline-flex');
@@ -132,6 +137,7 @@ $('.movieDetails').css('flex-wrap' , 'nowrap');
 $('.movieDetails').css('align-content' , 'flex-start');
 $('.movieDetails').css('justify-content' , 'flex-start');
 $('.movieDetails').css('align-items' , 'flex-start');
+$('.movieDetails').css('padding-left' , '5px')
 
 $('.moviePoster').css('height' , '450px');
 $('.moviePoster').css('width' , '35%');
@@ -140,7 +146,7 @@ $('.moviePoster').css('flex-direction' , 'column');
 $('.moviePoster').css('flex-wrap' , 'nowrap');
 $('.moviePoster').css('align-content' , 'center');
 $('.moviePoster').css('justify-content' , 'center');
-$('.moviePoster').css('align-items' , 'center');
+$('.moviePoster').css('align-items' , 'flex-end');
 
       //Removed Movies
 $('.removed-div').css('width' , "20%");
@@ -153,6 +159,7 @@ $('.removed-div').css('justify-content' , "flex-start");
 $('.removed-div').css('align-items' , "flex-start");
 
 $('.deleted-title').css('margin' , '15px 0px 10px 0px');
+$('.deleted-title').css('text-decoration' , 'underline');
 
 
       //Library Title 
@@ -165,63 +172,9 @@ $('.libraryTitle').css('align-items' , 'flex-start');
 
       // Movie Library 
 $('.movieLibrary').css('width' , '100%');
-$('.movieLibrary').css('height' , '400px');
+$('.movieLibrary').css('height' , '300px');
 $('.movieLibrary').css('display' , 'flex');
 $('.movieLibrary').css('flex-direction' , 'row');
 $('.movieLibrary').css('flex-wrap' , 'wrap');
 $('.movieLibrary').css('justify-content' , 'center');
 
-
-// //Media Queries 
-
-// // First Media Query for small screens
-
-
-
-// let mediaQ = window.matchMedia('(max-width: 1000px)');
-
-// function responsive(mediaQ) { 
-//       if (mediaQ.matches){
-//             // Content Continer for Media
-//             $('.content-container').css('display' , 'flex');
-//             $('.content-container').css('flex-direction' , 'column');
-//             $('.content-container').css('flex-wrap' , 'nowrap');
-//             $('.content-container').css('align-content' , 'center');
-//             $('.content-container').css('justify-content' , 'flex-start');
-//             $('.content-container').css('align-items' , 'flex-end');
-//             $('.content-container').css('padding-bottom' , '250px');
-
-//             //Active List 
-//             $('.active-list').css('width' , '100%');
-
-//             //Movie Details
-//             $('.movieDetails').css('width' , '100%');
-
-//             // Movie Info
-//             $('.movieInfo').css('width' , '100%');
-//             $('.movieInfo').css('display' , 'flex');
-//             $('.movieInfo').css('flex-direction' , 'column');
-//             $('.movieInfo').css('flex-wrap' , 'nowrap');
-
-//             // Movie Poster
-//             $('.moviePoster').css('width' , '50%');
-
-//             // Removed Div
-//             $('.removed-div').css('display' , 'flex');
-//             $('.removed-div').css('width' , '50%');
-
-//             //Library Title
-//             $('.libraryTitle').css('padding' , '15px 0px 10px 0px');
-
-//             // Movie Library
-//             $('.movieLibrary').css('display' , 'flex');
-//             $('.movieLibrary').css('flex-direction' , 'row');
-//             $('.movieLibrary').css('flex-wrap' , 'wrap');
-//             $('.movieLibrary').css('align-content' , 'flex-start');
-//             $('.movieLibrary').css('align-items' , 'flex-start');
-//       } else {
-//             console.log('working')
-//       }};
-
-//       responsive(mediaQ);
-//       mediaQ.addEventListener(responsive);

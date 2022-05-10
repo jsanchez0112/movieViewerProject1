@@ -1,3 +1,31 @@
+#title { 
+      text-decoration: underline;
+}
+
+
+.content-container{
+      background-color: #F5DBC9
+}
+
+.movieLibrary { 
+      background-color: #DFDDDB;
+}
+    
+.removed-div{ 
+      border-left: black 1px dotted;
+}
+
+.movieDetails { 
+      border-left: black 1px dotted;
+}
+img { 
+      padding-right: 5px;
+}
+
+button { 
+      border-radius: 8px;
+      border: 2px #F15656 solid;
+}
 
 
     @media (max-width: 1000px) {
@@ -12,7 +40,7 @@
        
       }
 
-    
+
        .movieInfo {
         width: 100%;
         display: flex;
@@ -73,7 +101,7 @@
        }
     }
 
-    
+
     @media (max-width: 1300px) { 
           .moviePoster { 
                 width: 100%;
