@@ -90,3 +90,32 @@ $('.removal').on('click', removingButton)
  $('.plot').defaultValue();
 
       }
+
+
+
+//       let maxSmallWidth = window.matchMedia('(max-width: 768px)');
+
+//       function responsive(maxSmallWidth) { 
+//             if (maxSmallWidth.matches) {
+
+//             }};
+// responsive(maxSmallWidth); 
+// maxSmallWidth.addEventListener(responsive);
+
+//jQuery + Media Queries
+
+      //Top 
+$('.header').css('text-align' , 'center');
+$('.header').css('font-size' , '3rem');
+
+
+
+      //Movie List 
+$('.active-list').css('width' , '20%');
+$('.active-list').css('height' , '450ox');
+$('.active-list').css('display' , 'flex');
+$('.active-list').css('flex-direction' , 'column');
+$('.active-list').css('justify-content' , 'flex-start');
+$('.active-list').css('align-items' , 'center');
+
+$('.addMovieSection').css('margin' , "10px 0px 0px 0px");

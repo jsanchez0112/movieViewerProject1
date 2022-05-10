@@ -1,19 +1,19 @@
-.header {
+/* .header {
       text-align: center;
       font-size: 3rem;
-    }
+    } */
     
-    .active-list {
-      width: 30%;
+    /* .active-list {
+      width: 20%;
       height: 450px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-    }
+    } */
     
     .movieInfo {
-      width: 50%;
+      width: 60%;
       height: 450px;
       display: flex;
     }
@@ -40,6 +40,8 @@
       height: 400px;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     
     .libraryTitle {
@@ -52,8 +54,7 @@
     
     .movieDetails {
       height: 450px;
-      width: 55%;
-    
+      width: 65%;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -64,7 +65,7 @@
     
     .moviePoster {
       height: 450px;
-      width: 45%;
+      width: 35%;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -81,11 +82,13 @@
       margin: 15px 0px 10px 0px;
     }
     
-    .addMovieSection {
+    /* .addMovieSection {
       margin: 10px 0px 0px 0px;
-    }
+    } */
+
+
     
-    @media (max-width: 760px) {
+    @media (max-width: 1000px) {
       .content-container {
         display: flex;
         flex-direction: column;
@@ -94,6 +97,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         padding-bottom: 250px;
+       
       }
     
       .movieInfo {
@@ -136,5 +140,28 @@
       .active-list {
         width: 100%;
       }
+      .libraryTitle { 
+            padding: 15px 0px 10px 0px;
+      }
     }
     
+
+    @media (max-width: 420px) { 
+       .libraryTitle { 
+             padding: 200px 0px 15px 0px;
+       }   
+       .removed-div { 
+             padding: 150px;
+       }
+
+       .deleted-title { 
+             padding: 100px; 
+       }
+    }
+
+    @media (max-width: 1300px) { 
+          .moviePoster { 
+                width: 100%;
+                height: 450px;
+          }
+    }
