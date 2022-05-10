@@ -11,14 +11,16 @@
         padding-bottom: 250px;
        
       }
+
     
-      .movieInfo {
+       .movieInfo {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     
-      }
+      } 
+
       .moviePoster {
         width: 50%;
     
@@ -29,48 +31,49 @@
      
         width: 50%;
       }
-    
-      .movieLibrary {
+
+       .movieLibrary {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-start;
         align-items: flex-start;
     
-      }
+      } 
+
       .movieDetails {
         width: 100%;
-    
-    
       }
-    
+
       img {
         width: 250px;
         height: 275px;
     
       }
+
       .active-list {
         width: 100%;
-      }
+      } 
+      
       .libraryTitle { 
             padding: 15px 0px 10px 0px;
-      }
     }
-    
+}
 
-    @media (max-width: 420px) { 
+ @media (max-width: 420px) { 
        .libraryTitle { 
              padding: 200px 0px 15px 0px;
-       }   
+       }
+
        .removed-div { 
              padding: 150px;
        }
-
        .deleted-title { 
              padding: 100px; 
        }
     }
 
+    
     @media (max-width: 1300px) { 
           .moviePoster { 
                 width: 100%;

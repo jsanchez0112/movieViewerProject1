@@ -2,7 +2,7 @@
 movies = [];
 
 // Element References
-const $title = $("#title");
+let $title = $("#title");
 const $runTime = $(".runTime");
 const $ratings = $(".ratings");
 const $plot = $(".plot");
@@ -10,9 +10,10 @@ const $genre = $(".genre");
 const $actors = $(".actors");
 const URL = "https://omdbapi.com/?apikey=160ba6d8&t=";
 
-//This is the list to add the movie to the list.
 
 // Functions
+
+
 // Function to add movie.
 function addingMovie() {
   const movieTitle = document.getElementById("movie-box").value;
@@ -23,14 +24,13 @@ function addingMovie() {
   $("#movie-box").val("");
 }
 
-// This is going to be the random generator to pick the movies.
+// Random Generator Function
 
 function getMovieTitle(event) {
   event.preventDefault();
   const name = movies[Math.floor(Math.random() * movies.length)];
   $.ajax(URL + name).then(function (info) {
-    console.log("data is coming through");
-    // console.log(info)
+//     console.log("data is coming through");
     $title.text(info.Title);
     $ratings.text(info.Ratings[1].Value);
     $runTime.text(info.Runtime);
@@ -41,14 +41,14 @@ function getMovieTitle(event) {
   });
 }
 
-// Removing of the item.
+
+// Removing clicked movie function.
 function movieRemoval() {
   $(this).remove();
   const moveMovie = $(this).html();
   let newItem = document.createElement("li");
   newItem.innerText = moveMovie;
   document.querySelector(".removedList").appendChild(newItem);
-  //      console.log(newItem)
   for (let i = 0; i < movies.length; i++) {
     if (movies[i] === moveMovie) {
       movies.splice(i, 1);
@@ -57,7 +57,6 @@ function movieRemoval() {
 }
 
 // Adding movie Poster
-
 function imgAdd(event) {
   event.preventDefault();
   const imgPost = $("#title").html();
@@ -67,7 +66,7 @@ function imgAdd(event) {
   });
 }
 
-// removing an item permantently 
+// Remove permanently from list.
 function permRemoval () { 
       $(this).remove();
 }
@@ -84,25 +83,19 @@ $('.removedList').on('click' , 'li' , permRemoval);
 
 
 
-// remove from list in the content piece.  - work in progress
-$('.removal').on('click', removingButton) 
-      function removingButton() {
- $('.plot').defaultValue();
+// // remove from list in the content piece.  - work in progress
 
-      }
+//       function removingButton() {
+//       getMovieTitle(undefined);
+//  }
+//  $('.removal').on('click', removingButton);
 
 
 
-//       let maxSmallWidth = window.matchMedia('(max-width: 768px)');
+//Styling
 
-//       function responsive(maxSmallWidth) { 
-//             if (maxSmallWidth.matches) {
 
-//             }};
-// responsive(maxSmallWidth); 
-// maxSmallWidth.addEventListener(responsive);
-
-//jQuery + Media Queries
+//jQuery
 
       //Top 
 $('.header').css('text-align' , 'center');
@@ -179,3 +172,56 @@ $('.movieLibrary').css('flex-wrap' , 'wrap');
 $('.movieLibrary').css('justify-content' , 'center');
 
 
+// //Media Queries 
+
+// // First Media Query for small screens
+
+
+
+// let mediaQ = window.matchMedia('(max-width: 1000px)');
+
+// function responsive(mediaQ) { 
+//       if (mediaQ.matches){
+//             // Content Continer for Media
+//             $('.content-container').css('display' , 'flex');
+//             $('.content-container').css('flex-direction' , 'column');
+//             $('.content-container').css('flex-wrap' , 'nowrap');
+//             $('.content-container').css('align-content' , 'center');
+//             $('.content-container').css('justify-content' , 'flex-start');
+//             $('.content-container').css('align-items' , 'flex-end');
+//             $('.content-container').css('padding-bottom' , '250px');
+
+//             //Active List 
+//             $('.active-list').css('width' , '100%');
+
+//             //Movie Details
+//             $('.movieDetails').css('width' , '100%');
+
+//             // Movie Info
+//             $('.movieInfo').css('width' , '100%');
+//             $('.movieInfo').css('display' , 'flex');
+//             $('.movieInfo').css('flex-direction' , 'column');
+//             $('.movieInfo').css('flex-wrap' , 'nowrap');
+
+//             // Movie Poster
+//             $('.moviePoster').css('width' , '50%');
+
+//             // Removed Div
+//             $('.removed-div').css('display' , 'flex');
+//             $('.removed-div').css('width' , '50%');
+
+//             //Library Title
+//             $('.libraryTitle').css('padding' , '15px 0px 10px 0px');
+
+//             // Movie Library
+//             $('.movieLibrary').css('display' , 'flex');
+//             $('.movieLibrary').css('flex-direction' , 'row');
+//             $('.movieLibrary').css('flex-wrap' , 'wrap');
+//             $('.movieLibrary').css('align-content' , 'flex-start');
+//             $('.movieLibrary').css('align-items' , 'flex-start');
+//       } else {
+//             console.log('working')
+//       }};
+
+//       responsive(mediaQ);
+//       mediaQ.addEventListener(responsive);
