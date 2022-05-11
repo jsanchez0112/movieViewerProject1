@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Movie Helper</title>
+    <title>MovieAide</title>
   </head>
 
+  <!-- Header -->
   <div class="header">
     <h5>MovieAide</h5>
-    <!-- This is where the header goes. -->
   </div>
 
   <br />
-<hr>
+  <hr />
+  <!-- All content for the movies. -->
   <div class="content-container">
     <div class="active-list">
       <div class="addMovieSection">
-        <!-- list goes here with the adding box -->
+        <!-- Left side of content container ; list for active movies. -->
         <input id="movie-box" type="text" placeholder="Movie Title" />
         <button id="addingButton">Add Movie</button>
       </div>
       <ul class="movieList"></ul>
     </div>
 
-    <!-- this is where the movie info will go plus the button to allow for the random generator -->
+    <!-- Center left piece where all movie info is held. -->
     <div class="movieInfo">
-      <!-- Poster is going to be left of the info to the right. -->
       <div class="movieDetails">
         <h4 id="title">Title</h4>
         <p>Plot: <span class="plot"></span></p>
@@ -39,25 +39,23 @@
         <div class="buttons">
           <button id="generateRandom">Get Random Movie</button>
           <button class="addToLibrary">Add To Watched</button>
-          <button class="removal">Remove from List</button>
+          <!-- <button class="removal">Remove from List</button> -->
         </div>
       </div>
-      <div class="moviePoster">
-        <!-- movie poster goes here. -->
-      </div>
+      <!-- Center right piece wehre the movie poster is being held. -->
+      <div class="moviePoster"></div>
     </div>
 
-    <!-- this is where the removed movies will go. ul list -->
+    <!-- Right side of content container ; removed movies list.  -->
     <div class="removed-div">
       <h4 class="deleted-title">Recently Deleted</h4>
       <ul class="removedList"></ul>
     </div>
   </div>
-<hr>
+  <hr />
+  <!-- Movie Library Title + movie library. -->
   <h2 class="libraryTitle">Watched Movies</h2>
-  <div class="movieLibrary">
-    <!-- this is going to be a library of the movie icons that will allow them to be showing the movie poster. -->
-  </div>
+  <div class="movieLibrary"></div>
 
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
