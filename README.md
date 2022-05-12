@@ -22,7 +22,7 @@
   
   
   <h4>App Deployment</h4>
-  Enter link here for the app. 
+<a href="https://movieaide.netlify.app/">Click here to view.</a>
   
   
   <h4>Future Enhancements</h4>
