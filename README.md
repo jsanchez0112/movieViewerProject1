@@ -1,5 +1,5 @@
 <h2>MovieAide</h2>
-
+A easy to use movie aid app that helps users pick a movie to watch by randomizing the list provided by the user. Users can also add movies to a library that they can refer to when needed.
 
 <h4>Technologies Used</h4>
 
