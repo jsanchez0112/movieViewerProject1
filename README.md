@@ -29,9 +29,8 @@ A easy to use movie aid app that helps users pick a movie to watch by randomizin
   
   <ul>
     <li>The ability to save to localstorage.</li>
-    <li>The ability to have user profiles.</li>
     <li>The ability to have user profiles with a login.</li>
-    <li>Integrated tools to help users see what streaming platforms generated movies can be access on.</li>
+    <li>Integrated tools to help users see what streaming platforms generated movies can be accessed on.</li>
     <li>Implement search bar for the Movie Library so users can look to see if they have seen a specific movie.</li>
     
  
