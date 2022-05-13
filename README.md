@@ -28,7 +28,7 @@ A easy to use movie aid app that helps users pick a movie to watch by randomizin
   <h4>Future Enhancements</h4>
   
   <ul>
-    <li>The ability to save to lovalstorage.</li>
+    <li>The ability to save to localstorage.</li>
     <li>The ability to have user profiles.</li>
     <li>The ability to have user profiles with a login.</li>
     <li>Integrated tools to help users see what streaming platforms generated movies can be access on.</li>
